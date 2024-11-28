@@ -229,6 +229,72 @@ header nav .user-options a:hover {
   background-color: #b30000;
 }
 
+.account-options {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #e60000;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #e60000;
+  outline: none;
+  box-shadow: 0 0 5px rgba(230, 0, 0, 0.5);
+}
+
+button[type="submit"].btn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #e60000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"].btn:hover {
+  background-color: #b30000;
+}
+
+a.btn-cadastro {
+  color: #e60000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.btn-cadastro:hover {
+  color: #b30000;
+}
+
 footer {
   text-align: center;
   padding: 1rem;

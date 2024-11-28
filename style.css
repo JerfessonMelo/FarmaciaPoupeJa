@@ -14,7 +14,6 @@ body {
   padding: 0;
 }
 
-/* Cabeçalho */
 header nav {
   display: flex;
   justify-content: space-between;
@@ -70,7 +69,6 @@ header nav .user-options a {
   background-color: #b30000;
 }
 
-/* Lista de produtos */
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -118,7 +116,6 @@ header nav .user-options a {
   background-color: #b30000;
 }
 
-/* Rodapé */
 footer {
   text-align: center;
   background-color: #e60000;
@@ -126,7 +123,53 @@ footer {
   padding: 1rem;
 }
 
-/* Media Queries para smartphones */
+#detalhes-produto {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#detalhes-produto img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#detalhes-produto h1 {
+  font-size: 1.8rem;
+  color: #e60000;
+}
+
+#detalhes-produto p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+#detalhes-produto span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e60000;
+}
+
+button {
+  margin-top: 1rem;
+  background-color: #e60000;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b30000;
+}
+
+
 @media (max-width: 768px) {
   header nav {
     flex-wrap: wrap;

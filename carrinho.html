@@ -18,15 +18,17 @@
     </header>
     <main>
         <h2>Meu Carrinho</h2>
-        <div class="cart-items">
-            <p>Seu carrinho está vazio no momento.</p>
-            <a href="produtos.html"><button>Ver produtos</button></a>
-        </div>
+        <div id="carrinho-lista"></div>
+        <a href="produtos.html"><button>Ver produtos</button></a>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
     </main>
     <footer>
         <p>&copy; 2024 Drogaria Poupe Já. Todos os direitos reservados.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', carregarCarrinho);
+    </script>
 </body>
 
 </html>

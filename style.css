@@ -11,6 +11,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(to top, #ffffff, #f9f9f9); 
 }
 
 header nav {
@@ -20,12 +21,15 @@ header nav {
   padding: 1rem;
   background-color: #e60000;
   color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header nav h1 a,
 header nav a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 header nav .logo {
@@ -38,11 +42,22 @@ header nav input[type="search"] {
   width: 60%;
   border-radius: 5px;
   border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+header nav input[type="search"]:focus {
+  border-color: #e60000;
+  outline: none;
 }
 
 header nav .user-options a {
   margin-left: 1rem;
   color: #fff;
+}
+
+header nav .user-options a:hover {
+  text-decoration: underline;
 }
 
 .categories {
@@ -61,6 +76,7 @@ header nav .user-options a {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .categories a button:hover {
@@ -81,6 +97,11 @@ header nav .user-options a {
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.product:hover {
+  transform: translateY(-10px);
 }
 
 .product img {
@@ -108,17 +129,11 @@ header nav .user-options a {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .product button:hover {
   background-color: #b30000;
-}
-
-footer {
-  text-align: center;
-  background-color: #e60000;
-  color: #fff;
-  padding: 1rem;
 }
 
 #detalhes-produto {
@@ -153,20 +168,75 @@ footer {
   color: #e60000;
 }
 
-button {
-  margin-top: 1rem;
-  background-color: #e60000;
+.cadastro-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cadastro-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #e60000;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #e60000;
+  box-shadow: 0 0 5px rgba(230, 0, 0, 0.5);
+}
+
+.btn {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
   color: #fff;
-  padding: 0.7rem 1.5rem;
+  background-color: #e60000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
+.btn:hover {
   background-color: #b30000;
 }
 
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e60000;
+  color: #fff;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 480px) {
   body {
@@ -253,5 +323,14 @@ button:hover {
   button {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
+  }
+
+  .cadastro-container {
+    padding: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.7rem;
   }
 }
